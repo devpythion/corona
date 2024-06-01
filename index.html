@@ -3,31 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narayan</title>
-    <link rel="icon" href="">
+    <title>Narayan Basnet</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+        
         body{
-            background-image: url(https://plus.unsplash.com/premium_photo-1661605951868-60757267124c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-            back
+            margin: 0;
+            padding: 0;
+            background-image: url(https://images.unsplash.com/photo-1483444308400-fb9510501d23?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat:no-repeat ;
+            
+        }
+        ol{
+            margin-top: 15px;
+            padding: 0;
+            /* border: 3px solid black; */
+            /* background-color: black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        li{
+            /* border: 2px solid red; */
+            /* background-color: aquamarine; */
+            margin-left: 100px;
+            height: 50px;
+            width: 80px;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+        }
+        li,a{
+            color: rgb(255, 255, 255);
+            font-family:  sans-serif;
+            font-size: 2rem;
+            display: flex;
+            text-align: center;
+            text-decoration: none;
         }
         h1{
-            font-family: "Roboto Mono", monospace;
+            /* border: 2px solid red; */
             text-align: center;
+            display: block;
+            color: rgb(255, 255, 255);
+            font-family:monospace;
+            font-size: 5rem;
+            margin-block-start: 2.67em;
         }
         p{
+            /* border: 2px solid red; */
             text-align: center;
-            font-family: "Ubuntu Sans Mono", monospace;
+            display: block;
+            color: rgb(255, 255, 255);
+            font-family:monospace;
+            font-size: 5rem;
+            margin: -80px;
         }
+        a:hover{
+            color: chartreuse;
+            cursor:pointer;
+        }
+
     </style>
 </head>
 <body>
-    
-    <h1>This site is under construction!!!</h1>
-    <p>Some thing Special is coming......</p>
-    <button onclick="document.getElementById('top').innerHTML=Date()">Click me and know your date and time</button>
-    <p id="top"></p>
-    <button onclick="Window.print()" >Print this page</button>
+    <nav class="nav-bar">
+        <ol class="list-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Info</a></li>
+        </ol>
+    </nav>
+    <h1>Hello,</h1>
+    <p>I am Narayan</p>
 </body>
 </html>
